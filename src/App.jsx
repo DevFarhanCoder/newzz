@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./Navbar";
-import News from "./components/News";
+import Navbar from "./Components/Navbar";
+import News from "./Components/News";
 import LoadingBar from "react-top-loading-bar";
 
 export default function App() {
