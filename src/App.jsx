@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./Navbar";
 import News from "./components/News";
 import LoadingBar from "react-top-loading-bar";
 
