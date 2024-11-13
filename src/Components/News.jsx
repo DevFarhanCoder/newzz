@@ -13,7 +13,7 @@ export default function News(props) {
     props.changeProgress(20);
     setLoading(true);
     fetch(
-      `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pagesize=${props.pageSize}`
+      `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}&page=${page}&pagesize=${props.pageSize}`
     )
       .then((response) => {
         props.changeProgress(30);
