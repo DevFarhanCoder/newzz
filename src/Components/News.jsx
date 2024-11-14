@@ -13,7 +13,7 @@ export default function News(props) {
     props.changeProgress(20);
     setLoading(true);
     fetch(
-      `https://thingproxy.freeboard.io/fetch/https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}&page=${page}&pagesize=${props.pageSize}`,
+      `https://api.allorigins.win/raw?url=${encodeURIComponent(`https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}&page=${page}&pagesize=${props.pageSize}`)}`,
       {
     headers: {
       'X-Requested-With': 'XMLHttpRequest'
