@@ -13,7 +13,7 @@ export default function News(props) {
     props.changeProgress(20);
     setLoading(true);
     fetch(
-      `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}&page=${page}&pagesize=${props.pageSize}`
+      `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}&page=${page}&pagesize=${props.pageSize}`,
       {
     headers: {
       'Origin': 'https://newzz-website.vercel.app/', 
